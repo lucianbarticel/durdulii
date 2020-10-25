@@ -47,10 +47,6 @@ const filterEntries = ({ entries, filters }) => {
   )
 }
 
-const orderEntries = ({entries, criterion}) => {
-  return entries.sort((a,b) => a[criterion] - b[criterion])
-}
-
 export const DataManagerContext = ({ children }) => {
 
   const maximums = {
@@ -94,8 +90,7 @@ export const DataManagerContext = ({ children }) => {
       fibresRange: fibresFilter,
       searchTerm: searchFilter,
     }})
-    const orderedEntries = orderEntries({ entries: filteredEntries, criterion: 'calorii'})
-    setEntries(orderedEntries)
+    setEntries(filteredEntries)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
       selectedCategoriesFilter,
