@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/durdulii/static/css/main.34e8356b.chunk.css",
+    "main.js": "/durdulii/static/js/main.8fe151fd.chunk.js",
+    "main.js.map": "/durdulii/static/js/main.8fe151fd.chunk.js.map",
+    "runtime-main.js": "/durdulii/static/js/runtime-main.782be472.js",
+    "runtime-main.js.map": "/durdulii/static/js/runtime-main.782be472.js.map",
+    "static/css/2.2d2642aa.chunk.css": "/durdulii/static/css/2.2d2642aa.chunk.css",
+    "static/js/2.221ad399.chunk.js": "/durdulii/static/js/2.221ad399.chunk.js",
+    "static/js/2.221ad399.chunk.js.map": "/durdulii/static/js/2.221ad399.chunk.js.map",
+    "static/js/3.53a79fbc.chunk.js": "/durdulii/static/js/3.53a79fbc.chunk.js",
+    "static/js/3.53a79fbc.chunk.js.map": "/durdulii/static/js/3.53a79fbc.chunk.js.map",
+    "index.html": "/durdulii/index.html",
+    "static/css/2.2d2642aa.chunk.css.map": "/durdulii/static/css/2.2d2642aa.chunk.css.map",
+    "static/css/main.34e8356b.chunk.css.map": "/durdulii/static/css/main.34e8356b.chunk.css.map",
+    "static/js/2.221ad399.chunk.js.LICENSE.txt": "/durdulii/static/js/2.221ad399.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.782be472.js",
+    "static/css/2.2d2642aa.chunk.css",
+    "static/js/2.221ad399.chunk.js",
+    "static/css/main.34e8356b.chunk.css",
+    "static/js/main.8fe151fd.chunk.js"
+  ]
+}
