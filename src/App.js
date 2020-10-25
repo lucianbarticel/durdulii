@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { Layout, Space } from 'antd';
+import { FoodTable, Filters, Search } from './components';
+import { DataManagerContext } from './services' 
+
+import 'antd/dist/antd.min.css';
 import './App.css';
 
-function App() {
+const { Content, Sider } = Layout;
+
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Sider style={{ backgroundColor: "white" }}>
+          <Filters />  
+        </Sider>
+        <Content style={{ padding: '25px 100px' }}>
+          <Space style={{ width: '100%' }} direction="vertical">
+            <Search />
+            <FoodTable />
+          </Space>
+        </Content>
+      </Layout>
     </div>
   );
 }
 
-export default App;
+const enhance = (Provider, Component) => props => (
+  <Provider>
+    <Component {...props} />
+  </Provider>
+);
+
+export default enhance(DataManagerContext, App);
